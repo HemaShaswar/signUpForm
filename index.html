@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
 </head>
 <body>
@@ -15,7 +16,8 @@
                 <img class="logo" src="/images/tesla_logo_PNG19.png" alt="tesla">
                 <h1>Mesla</h1>
             </div>
-            <p>copyright</p>
+            <p>Image from <a target="_blank" href="https://unsplash.com/photos/2FEE6BR343k">unsplash</a> 
+                by <a target="_blank" href="https://unsplash.com/@unstable_affliction">Ivan Bandura</a></p>
         </div>
         <div class="content">
             <div class="description">
@@ -23,8 +25,45 @@
             </div>
             <div class="form">
                 <form action="/" method="post">
+                    <div class="div">
+                        <label for="first-name">First Name</label>
+                        <input required type="text" name="first-name" id="first-name">
+                    </div>
+
+                    <div class="div">
+                        <label for="last-name">First Name</label>
+                        <input required type="text" name="last-name" id="last-name">
+
+                    </div>
+                        
+                    <div>
+                        <label for="email">Email</label>
+                        <input required autocomplete="email" type="email" name="user-email" id="email">
+                    
+                    </div>
+
+                    <div >
+                        <label for="phone-number">Phone Number</label>
+                        <input autocomplete="tel-country-code" type="tel" name="user-phone" id="phone-number">
+
+                    </div>
+
+                    <div class="check">
+                        <label for="password">Password</label>
+                        <input required autocomplete="new-password" type="password" name="user-password" id="password">
+
+                    </div>
+
+                    <div>
+                        <label for="confirm">Confirm Password</label>
+                        <input required type="password" name="confirmed1-password" id="confirm">
+                    </div>
                     
                 </form>
+            </div>
+            <div class="submit">
+                <button type="submit">Sign Up</button>
+                <p>Already have an accont? <a class="black-link" href="/">Log in</a></p>
             </div>
         </div>
     </div>
