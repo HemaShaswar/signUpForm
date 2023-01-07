@@ -10,9 +10,13 @@ warn.classList.add('match')
 submit.addEventListener('click', (e) => {
     if (pass.value !== confirm.value) {
         e.preventDefault
+        pass.classList.add('error')
+        confirm.classList.add('error')
         check.appendChild(warn)
     } else if (warn.isConnected) {
         check.removeChild(warn);
+        pass.classList.remove('error')
+        confirm.classList.remove('error')
 
     }
 })
